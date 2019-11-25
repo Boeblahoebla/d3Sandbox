@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="47382460-80eb-4daa-817f-cfa28202cb89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d3_introduction/src/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/d3_introduction/src/scripts/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,15 +14,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/d3_introduction/src/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            <state relative-caret-position="272">
+              <caret line="76" column="39" lean-forward="true" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -49,7 +57,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="d3_intro_01_smileyFace" />
       </map>
     </option>
   </component>
@@ -95,31 +103,6 @@
             <path>
               <item name="d3Sandbox" type="b2602c69:ProjectViewProjectNode" />
               <item name="d3Sandbox" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="d3Sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="d3Sandbox" type="462c0819:PsiDirectoryNode" />
-              <item name="d3_introduction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="d3Sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="d3Sandbox" type="462c0819:PsiDirectoryNode" />
-              <item name="d3_introduction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="d3Sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="d3Sandbox" type="462c0819:PsiDirectoryNode" />
-              <item name="d3_introduction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="d3Sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="d3Sandbox" type="462c0819:PsiDirectoryNode" />
-              <item name="d3_introduction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -186,6 +169,7 @@
       <workItem from="1574631990156" duration="8926000" />
       <workItem from="1574685817737" duration="168000" />
       <workItem from="1574687995395" duration="4366000" />
+      <workItem from="1574692398803" duration="1389000" />
     </task>
     <task id="LOCAL-00001" summary="Drawing shapes with SVG &amp; CSS styling">
       <created>1574552520194</created>
@@ -299,11 +283,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574692348153</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Removed some redundant comments">
+      <created>1574692529254</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1574692529254</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added animation to the eyebrows &amp; added the eyebrows to its group">
+      <created>1574693624497</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1574693624497</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17087000" />
+    <option name="totallyTimeSpent" value="18476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
@@ -349,12 +347,12 @@
     <MESSAGE value="circle eyes &amp; mouth added to the smileyFace group" />
     <MESSAGE value="Added eyebrows" />
     <MESSAGE value="Added eyebrows to the eyebrowsGroup which is added to the eyes group" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added eyebrows to the eyebrowsGroup which is added to the eyes group" />
+    <MESSAGE value="Removed some redundant comments" />
+    <MESSAGE value="Added animation to the eyebrows &amp; added the eyebrows to its group" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added animation to the eyebrows &amp; added the eyebrows to its group" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/d3_introduction/src/styles/svg.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/d3_introduction/src/styles/svg.scss" />
     <entry file="file://$PROJECT_DIR$/d3_introduction/src/styles/index.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -369,48 +367,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/svg.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="27" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index_svg.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="36" selection-start-column="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/d3_introduction-02_barChart/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="7" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/svg.css" />
+    <entry file="file://$PROJECT_DIR$/assets/css/index.css" />
+    <entry file="file://$PROJECT_DIR$/index_svg.html" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/assets/js/index.js" />
+    <entry file="file://$PROJECT_DIR$/d3_introduction-02_barChart/.gitignore" />
     <entry file="file://$PROJECT_DIR$/d3_introduction/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -418,20 +380,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/d3_introduction/src/scripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="76" column="39" lean-forward="true" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/d3_introduction/src/scripts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
