@@ -1,6 +1,7 @@
-$body-color: slateblue;
+rect {
+  fill: steelblue;
+}
 
-body {
-  color: $body-color;
-  font-family: sans-serif;
+text {
+  font-size: 1.5em;
 }
