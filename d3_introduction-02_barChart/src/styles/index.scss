@@ -2,6 +2,12 @@ rect {
   fill: steelblue;
 }
 
+rect:hover {
+  fill: orange;
+  stroke: black;
+  stroke-opacity: 0.2;
+}
+
 text {
   font-size: 1.5em;
 }
