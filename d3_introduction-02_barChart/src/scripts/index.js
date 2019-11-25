@@ -21,6 +21,11 @@ const generateBarChart = data => {
     const xValue = d => d.population;
     const yValue = d => d.country;
 
+    // Set up the d3 margin convention
+    const margin = {top: 20, right: 20, bottom:20, left:20};
+    const innerWidth = width - margin.right - margin.left;
+    const innerHeight = height - margin.top - margin.bottom;
+
     // Generate an instance of scaleLinear for our X axis
     // https://www.dashingd3js.com/d3js-scales
     const xScale = scaleLinear()
@@ -29,22 +34,23 @@ const generateBarChart = data => {
 
         // The visual range along the x scale in pixels
         // going from 0 to the max width of the svg
-        .range([0, width]);
+        .range([0, innerWidth]);
 
     // Generate an instance of scaleBand for our Y axis
     const yScale = scaleBand()
         // The data domain containing all the countries
         .domain(data.map(d => yValue(d)))
-        .range([0, height]);
+        .range([0, innerHeight]);
 
-    console.log(xScale.domain());
-    console.log(xScale.range());
-    console.log(yScale.domain());
+    // Generate the inner rectangle which holds our bars
+    // using the d3 margin convention
+    const innerRect = svg.append('g')
+        .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
     // D3 data mapping to map all the data to the future
     // rectangles for our bar chart (data join)
     // https://www.amphinicy.com/blog/post/manipulating-svg-using-d3js-library
-    svg.selectAll('rect')
+    innerRect.selectAll('rect')
         .data(data)
         .enter()
         .append('rect')
