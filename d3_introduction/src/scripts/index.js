@@ -66,9 +66,6 @@ const rightEyebrow = eyebrowsGroup.append('rect')
     .attr('width', eyebrowWidth)
     .attr('height', eyebrowHeight);
 
-
-// Draw the right eyebrow
-
 // Draw the mouth
 const mouth = smileyFace.append('path')
     .attr('d', arc()({
