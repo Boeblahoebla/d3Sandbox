@@ -66,6 +66,13 @@ const rightEyebrow = eyebrowsGroup.append('rect')
     .attr('width', eyebrowWidth)
     .attr('height', eyebrowHeight);
 
+// Animation of the eyebrows
+eyebrowsGroup
+    .transition().duration(2000)
+    .attr('transform', `translate(0, ${eyebrowYOffset - 50})`)
+    .transition().duration(2000)
+    .attr('transform', `translate(0, ${eyebrowYOffset})`);
+
 // Draw the mouth
 const mouth = smileyFace.append('path')
     .attr('d', arc()({
