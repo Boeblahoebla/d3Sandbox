@@ -50,17 +50,19 @@ const rightEye = eyesGroup.append('circle')
     .attr('r', eyeRadius)
     .attr('cx', + eyeSpacing);
 
+// Add the eyebrowsGroup to add elements to with similar properties
+const eyebrowsGroup = eyesGroup.append('g')
+    .attr('transform', `translate(0, ${eyebrowYOffset})`);
+
 // Draw the left eyebrow
-const leftEyebrow = eyesGroup.append('rect')
+const leftEyebrow = eyebrowsGroup.append('rect')
     .attr('x', -eyeSpacing - eyebrowWidth / 2)
-    .attr('y', eyebrowYOffset)
     .attr('width', eyebrowWidth)
     .attr('height', eyebrowHeight);
 
 // Draw the right eyebrow
-const rightEyebrow = eyesGroup.append('rect')
+const rightEyebrow = eyebrowsGroup.append('rect')
     .attr('x', eyeSpacing - eyebrowWidth / 2)
-    .attr('y', eyebrowYOffset)
     .attr('width', eyebrowWidth)
     .attr('height', eyebrowHeight);
 
