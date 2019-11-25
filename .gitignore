@@ -1,0 +1,15 @@
+# dependencies
+d3_introduction/node_modules
+d3_introduction-02_barChart/node_modules
+
+# production
+build
+
+# misc
+.DS_Store
+
+npm-debug.log
+yarn-error.log
+yarn.lock
+.yarnclean
+.vscode
