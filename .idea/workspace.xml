@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/d3_introduction-02_barChart/src/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+            <state relative-caret-position="255">
+              <caret line="54" column="72" lean-forward="true" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -200,7 +200,7 @@
       <workItem from="1574687995395" duration="4366000" />
       <workItem from="1574692398803" duration="1666000" />
       <workItem from="1574710090869" duration="4636000" />
-      <workItem from="1574716396498" duration="560000" />
+      <workItem from="1574716396498" duration="2225000" />
     </task>
     <task id="LOCAL-00001" summary="Drawing shapes with SVG &amp; CSS styling">
       <created>1574552520194</created>
@@ -349,14 +349,29 @@
       <option name="project" value="LOCAL" />
       <updated>1574714706377</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="created value Accessors to make the code more generic">
+      <created>1574717009380</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1574717009380</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Added the d3 margin convention having an inner rectangle which now holds our bars. This gives place for the X &amp; Y axis. The d3 data mapping is now mapped to the innerRect instead of the svg">
+      <created>1574717753592</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1574717753592</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23949000" />
+    <option name="totallyTimeSpent" value="25614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14828898" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -404,7 +419,9 @@
     <MESSAGE value="CVS file can now be loaded through D3 which contains data for our bar chart" />
     <MESSAGE value="Bars are now generated for each data row... having equal height &amp; width &amp; stacked on top of each other" />
     <MESSAGE value="Preliminary bar chart is now showing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preliminary bar chart is now showing" />
+    <MESSAGE value="created value Accessors to make the code more generic" />
+    <MESSAGE value="Added the d3 margin convention having an inner rectangle which now holds our bars. This gives place for the X &amp; Y axis. The d3 data mapping is now mapped to the innerRect instead of the svg" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the d3 margin convention having an inner rectangle which now holds our bars. This gives place for the X &amp; Y axis. The d3 data mapping is now mapped to the innerRect instead of the svg" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/d3_introduction/src/styles/svg.scss" />
@@ -486,8 +503,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/d3_introduction-02_barChart/src/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+        <state relative-caret-position="255">
+          <caret line="54" column="72" lean-forward="true" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

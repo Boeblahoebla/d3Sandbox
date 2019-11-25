@@ -2,7 +2,7 @@
 //////////
 
 // D3
-import { select, csv, scaleLinear, max, scaleBand } from 'd3';
+import {select, csv, scaleLinear, max, scaleBand, axisLeft, axisBottom} from 'd3';
 
 // Styling
 import '../styles/index.scss';
@@ -22,7 +22,8 @@ const generateBarChart = data => {
     const yValue = d => d.country;
 
     // Set up the d3 margin convention
-    const margin = {top: 20, right: 20, bottom:20, left:20};
+    // https://bl.ocks.org/mbostock/3019563
+    const margin = {top: 20, right: 20, bottom:20, left:100};
     const innerWidth = width - margin.right - margin.left;
     const innerHeight = height - margin.top - margin.bottom;
 
@@ -47,7 +48,16 @@ const generateBarChart = data => {
     const innerRect = svg.append('g')
         .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
-    // D3 data mapping to map all the data to the future
+    // Generate the Y axis group element by "calling" axisLeft(yScale)
+    // after the new group gets appended using chaining
+    const yScaleGroup = innerRect.append('g').call(axisLeft(yScale));
+
+    // Generate the X axis group element by "calling" axisBottom(xScale)
+    // after the new group gets appended using chaining
+    const xScaleGroup = innerRect.append('g').call(axisBottom(xScale))
+        .attr('transform', `translate(0, ${innerHeight})`);
+
+        // D3 data mapping to map all the data to the future
     // rectangles for our bar chart (data join)
     // https://www.amphinicy.com/blog/post/manipulating-svg-using-d3js-library
     innerRect.selectAll('rect')
