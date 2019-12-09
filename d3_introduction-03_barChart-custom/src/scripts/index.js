@@ -2,7 +2,7 @@
 //////////
 
 // D3
-import {select, csv, scaleLinear, max, scaleBand, axisLeft, axisBottom} from 'd3';
+import { select, csv, scaleLinear, max, scaleBand, axisLeft, axisBottom, format } from 'd3';
 
 // Styling
 import '../styles/index.scss';
@@ -23,7 +23,7 @@ const generateBarChart = data => {
 
     // Set up the d3 margin convention
     // https://bl.ocks.org/mbostock/3019563
-    const margin = {top: 20, right: 20, bottom:30, left:150};
+    const margin = { top: 20, right: 45, bottom:30, left:175 };
     const innerWidth = width - margin.right - margin.left;
     const innerHeight = height - margin.top - margin.bottom;
 
@@ -52,9 +52,18 @@ const generateBarChart = data => {
     // after the new group gets appended using chaining
     innerRect.append('g').call(axisLeft(yScale));
 
+    // A custom tick format which replaces "G" by "B"
+    const xAxisTickFormat = number =>
+        format('.3s')(number)
+            .replace('G', 'B');
+
+    // Generate an X axis to which we can append more config lines
+    const xAxis = axisBottom(xScale)
+        .tickFormat(xAxisTickFormat); // Tickformat: http://www.shorturl.at/dnqsW
+
     // Generate the X axis group element by "calling" axisBottom(xScale)
     // after the new group gets appended using chaining
-    innerRect.append('g').call(axisBottom(xScale))
+    innerRect.append('g').call(xAxis)
         .attr('transform', `translate(0, ${innerHeight})`);
 
     // D3 data mapping to map all the data to the future rectangles
