@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04baa9d2-27ab-42dc-964d-06bdab0605f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/d3Sandbox.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/d3Sandbox.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/d3_introduction-03_barChart-custom/src/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/d3_introduction-03_barChart-custom/src/scripts/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/d3_introduction-03_barChart-custom/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/d3_introduction-03_barChart-custom/src/styles/index.scss" afterDir="false" />
@@ -22,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/d3_introduction-03_barChart-custom/src/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+            <state relative-caret-position="238">
+              <caret line="74" column="44" lean-forward="true" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -34,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/d3_introduction-03_barChart-custom/src/styles/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="289">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -154,7 +152,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575895328033</updated>
-      <workItem from="1575895329620" duration="2399000" />
+      <workItem from="1575895329620" duration="5222000" />
     </task>
     <task id="LOCAL-00001" summary="Set up branch d3_intro_03_barchart_custom">
       <created>1575896576608</created>
@@ -163,14 +161,22 @@
       <option name="project" value="LOCAL" />
       <updated>1575896576608</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added number formatting to the X axis &amp; increased the font size">
+      <created>1575898000591</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575898000591</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2399000" />
+    <option name="totallyTimeSpent" value="5222000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1296" height="1031" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12798092" />
@@ -196,20 +202,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Set up branch d3_intro_03_barchart_custom" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set up branch d3_intro_03_barchart_custom" />
+    <MESSAGE value="added number formatting to the X axis &amp; increased the font size" />
+    <option name="LAST_COMMIT_MESSAGE" value="added number formatting to the X axis &amp; increased the font size" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/d3_introduction-03_barChart-custom/src/styles/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="289">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/d3_introduction-03_barChart-custom/src/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+        <state relative-caret-position="238">
+          <caret line="74" column="44" lean-forward="true" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

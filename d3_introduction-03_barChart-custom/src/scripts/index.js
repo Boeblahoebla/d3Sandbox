@@ -23,7 +23,7 @@ const generateBarChart = data => {
 
     // Set up the d3 margin convention
     // https://bl.ocks.org/mbostock/3019563
-    const margin = { top: 20, right: 45, bottom:30, left:175 };
+    const margin = { top: 40, right: 45, bottom:100, left:175 };
     const innerWidth = width - margin.right - margin.left;
     const innerHeight = height - margin.top - margin.bottom;
 
@@ -50,7 +50,10 @@ const generateBarChart = data => {
 
     // Generate the Y axis group element by "calling" axisLeft(yScale)
     // after the new group gets appended using chaining
-    innerRect.append('g').call(axisLeft(yScale));
+    const yAxisGroup = innerRect.append('g')
+        .call(axisLeft(yScale))
+        .selectAll('.domain, .tick line')
+            .remove();
 
     // A custom tick format which replaces "G" by "B"
     const xAxisTickFormat = number =>
@@ -59,12 +62,34 @@ const generateBarChart = data => {
 
     // Generate an X axis to which we can append more config lines
     const xAxis = axisBottom(xScale)
-        .tickFormat(xAxisTickFormat); // Tickformat: http://www.shorturl.at/dnqsW
+        .tickFormat(xAxisTickFormat) // Tickformat: http://www.shorturl.at/dnqsW
+        .tickSize(-innerHeight);
+
 
     // Generate the X axis group element by "calling" axisBottom(xScale)
     // after the new group gets appended using chaining
-    innerRect.append('g').call(xAxis)
+    const xAxisGroup = innerRect.append('g').call(xAxis)
         .attr('transform', `translate(0, ${innerHeight})`);
+
+
+    // Remove the domain from the xAxisGroup
+    xAxisGroup.select('.domain').remove();
+
+
+    // Generate a chart Title
+    innerRect.append('text')
+        .text('Top 10 most populated countries')
+        .attr('y', '-10');
+
+
+    // Generate a label for the x Axis
+    xAxisGroup.append('text')
+        .attr('y', 60)
+        .attr('x', innerWidth / 2)
+        .attr('fill', "#AAAAAA")
+        .attr('class', 'axisLabel')
+        .text('Population');
+
 
     // D3 data mapping to map all the data to the future rectangles
     // for our bar chart (data join)
